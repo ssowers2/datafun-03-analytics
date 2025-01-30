@@ -3,7 +3,7 @@ This project demonstrates how to fetch and process various types of data (Excel,
 The repository includes:  Four example fetchers: Scripts to retrieve data from the web. Four example processors: Scripts to analyze and process the fetched data.
 Project Workflow
 
-Steps I took to initialize this project:
+##Steps I took to initialize this project
 1. Created a new public repository from scratch
 2. Used Git to clone the new repository to my local machine
 3. Added files such as .gitignore and requirements.txt
@@ -11,6 +11,32 @@ Steps I took to initialize this project:
 5. Installed desired dependencies and documented them in my requirements.txt file
 6. Used Git to add, commit, and push commands to add new files to GitHub
 
-Systems Used:
+##Systems Used
 1. Windows 11
 2. Windows PowerShell
+
+## Project Structure
+datafun-03-analytics/
+│-- .venv/                 # Python virtual environment (ignored by Git)
+│   ├── Include/
+│   ├── Lib/
+│   ├── Scripts/
+│   ├── share/
+│   ├── pyvenv.cfg
+│
+│-- fetch_scripts/          # Scripts for fetching data
+│   ├── example_get_csv.py
+│   ├── example_get_excel.py
+│   ├── example_get_json.py
+│   ├── example_get_text.py
+│
+│-- process_scripts/        # Scripts for processing data
+│   ├── example_process_csv.py
+│   ├── example_process_excel.py
+│   ├── example_process_json.py
+│   ├── example_process_text.py
+│
+│-- .gitignore              # Git ignore file
+│-- README.md               # Project documentation
+│-- requirements.txt        # Dependencies for the project
+│-- utils_logger.py         # Logging utility
