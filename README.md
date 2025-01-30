@@ -40,3 +40,7 @@ datafun-03-analytics/
 │-- README.md               # Project documentation
 │-- requirements.txt        # Dependencies for the project
 │-- utils_logger.py         # Logging utility
+
+##Helpful Links
+https://github.com/denisecase/pro-analytics-01/tree/main/02-project-initialization
+https://github.com/denisecase/pro-analytics-01/blob/main/03-repeatable-workflow/REPEATABLE-WORKFLOW.md
