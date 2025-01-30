@@ -9,7 +9,7 @@ Steps I took to initialize this project:
 3. Added files such as .gitignore and requirements.txt
 4. Created a Local Python Virtual Environment for my project
 5. Installed desired dependencies and documented them in my requirements.txt file
-6. Used Git to add, commit, and push to add new files to GitHub
+6. Used Git to add, commit, and push commands to add new files to GitHub
 
 Systems Used:
 1. Windows 11
