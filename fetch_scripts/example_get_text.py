@@ -12,7 +12,7 @@ in the same folder as this file.
 import sys
 import os
 
-# Ensure Python can find utils_logger.py in the root folder
+# Making sure Python can find utils_logger.py in the root folder since the fetch_scripts are in their own folder
 sys.path.append(os.path.abspath(os.path.join(os.path.dirname(__file__), '..')))
 # Import from Python Standard Library
 import pathlib

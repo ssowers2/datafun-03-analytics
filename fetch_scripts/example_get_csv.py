@@ -1,9 +1,7 @@
 """
-This example file fetches a CSV file from the web 
-and saves it to a local file named 2020_happiness.csv in a folder named example_data.
+This file fetches a CSV file from the web 
+and saves it to a local file named 2025_pokemon.csv in a folder named data.
 
-Please save a copy of the provided utils_logger.py file 
-in the same folder as this file.
 """
 
 #####################################
@@ -11,8 +9,9 @@ in the same folder as this file.
 #####################################
 import sys
 import os
+import requests
 
-# Ensure Python can find utils_logger.py in the root folder
+# Making sure Python can find utils_logger.py in the root folder since the fetch_scripts are in their own folder
 sys.path.append(os.path.abspath(os.path.join(os.path.dirname(__file__), '..')))
 
 from utils_logger import logger
