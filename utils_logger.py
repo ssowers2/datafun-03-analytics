@@ -12,7 +12,6 @@ Features:
 THIS LOGGER SHOULD WORK WITHOUT NEEDING MODIFICATION.
 Just put a copy in your root project folder and import in your scripts as shown in the examples.
 """
-
 # Imports from Python Standard Library
 import pathlib
 

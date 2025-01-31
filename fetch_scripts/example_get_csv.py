@@ -9,6 +9,13 @@ in the same folder as this file.
 #####################################
 # Import Modules at the Top
 #####################################
+import sys
+import os
+
+# Ensure Python can find utils_logger.py in the root folder
+sys.path.append(os.path.abspath(os.path.join(os.path.dirname(__file__), '..')))
+
+from utils_logger import logger
 
 # Import from Python Standard Library
 import pathlib
