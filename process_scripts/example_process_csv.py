@@ -5,6 +5,11 @@ Process a CSV file on 2020 Happiness ratings by country to analyze the `Ladder s
 #####################################
 # Import Modules
 #####################################
+import sys
+import os
+
+# Ensure Python can find utils_logger.py in the root folder
+sys.path.append(os.path.abspath(os.path.join(os.path.dirname(__file__), '..')))
 
 # Import from Python Standard Library
 import pathlib

@@ -23,6 +23,11 @@ JSON file is in the format where people is a list of dictionaries with keys "cra
 #####################################
 # Import Modules
 #####################################
+import sys
+import os
+
+# Ensure Python can find utils_logger.py in the root folder
+sys.path.append(os.path.abspath(os.path.join(os.path.dirname(__file__), '..')))
 
 # Import from Python Standard Library
 import pathlib
