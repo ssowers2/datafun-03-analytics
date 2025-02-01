@@ -30,7 +30,7 @@ processed_folder_name: str = "data_processed"
 #####################################
 
 def analyze_Speed_speed(file_path: pathlib.Path) -> dict:
-    """Analyze the 'speed' speed column to calculate min, max, mean, and stdev."""
+    """Analyze the 'speed' column to calculate min, max, mean, and stdev."""
     try:
         # initialize an empty list to store the speeds
         speed_list = []
