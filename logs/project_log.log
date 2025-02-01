@@ -257,3 +257,27 @@
 2025-02-01 11:03:43.535 | INFO     | __main__:<module>:56 - Starting text processing...
 2025-02-01 11:03:43.536 | INFO     | __main__:process_text_file:49 - Processed text file: fetched_data\geographical_characters.txt, Word count saved to: data_processed\capital_letters_word_count.txt
 2025-02-01 11:03:43.537 | INFO     | __main__:<module>:58 - Text processing complete.
+2025-02-01 11:08:30.294 | INFO     | utils_logger:<module>:40 - Logging to file: logs\project_log.log
+2025-02-01 11:08:30.294 | INFO     | __main__:<module>:82 - Starting CSV processing...
+2025-02-01 11:08:30.298 | INFO     | __main__:process_csv_file:75 - Processed CSV file: fetched_data\pokemon_all_generations.csv, Statistics saved to: data_processed\pokemon_speed_stats.txt
+2025-02-01 11:08:30.298 | INFO     | __main__:<module>:84 - CSV processing complete.
+2025-02-01 11:08:38.676 | INFO     | utils_logger:<module>:40 - Logging to file: logs\project_log.log
+2025-02-01 11:08:38.677 | INFO     | __main__:<module>:82 - Starting CSV processing...
+2025-02-01 11:08:38.680 | INFO     | __main__:process_csv_file:75 - Processed CSV file: fetched_data\pokemon_all_generations.csv, Statistics saved to: data_processed\pokemon_speed_stats.txt
+2025-02-01 11:08:38.680 | INFO     | __main__:<module>:84 - CSV processing complete.
+2025-02-01 11:09:24.297 | INFO     | utils_logger:<module>:40 - Logging to file: logs\project_log.log
+2025-02-01 11:09:24.297 | INFO     | __main__:<module>:82 - Starting CSV processing...
+2025-02-01 11:09:24.301 | INFO     | __main__:process_csv_file:75 - Processed CSV file: fetched_data\pokemon_all_generations.csv, Statistics saved to: data_processed\pokemon_speed_stats.txt
+2025-02-01 11:09:24.301 | INFO     | __main__:<module>:84 - CSV processing complete.
+2025-02-01 11:09:30.253 | INFO     | utils_logger:<module>:40 - Logging to file: logs\project_log.log
+2025-02-01 11:09:30.254 | INFO     | __main__:<module>:61 - Starting Excel processing...
+2025-02-01 11:09:49.090 | INFO     | __main__:process_excel_file:54 - Processed Excel file: fetched_data\adventure_works_sales.xlsx, Word count saved to: data_processed\adventure_works_usa_count.txt
+2025-02-01 11:09:49.090 | INFO     | __main__:<module>:63 - Excel processing complete.
+2025-02-01 11:09:58.128 | INFO     | utils_logger:<module>:40 - Logging to file: logs\project_log.log
+2025-02-01 11:09:58.128 | INFO     | __main__:<module>:99 - Starting JSON processing...
+2025-02-01 11:09:58.129 | INFO     | __main__:process_json_file:92 - Processed JSON file: fetched_data\people.json, Results saved to: data_processed\people_by_gender.txt
+2025-02-01 11:09:58.129 | INFO     | __main__:<module>:101 - JSON processing complete.
+2025-02-01 11:10:05.795 | INFO     | utils_logger:<module>:40 - Logging to file: logs\project_log.log
+2025-02-01 11:10:05.796 | INFO     | __main__:<module>:56 - Starting text processing...
+2025-02-01 11:10:05.796 | INFO     | __main__:process_text_file:49 - Processed text file: fetched_data\geographical_characters.txt, Word count saved to: data_processed\capital_letters_word_count.txt
+2025-02-01 11:10:05.797 | INFO     | __main__:<module>:58 - Text processing complete.

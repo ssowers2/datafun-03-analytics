@@ -70,19 +70,19 @@ PROCESSORS
 Pokémon CSV Processor:
 Analyzes the Speed column in pokemon_all_generations.csv, computing statistics like min, max, mean, and standard deviation.
 Processed Output: data_processed/pokemon_speed_stats.txt
-Execution Command: py data/sowers_process_csv.py
+Execution Command: py processed/sowers_process_csv.py
 
 Sales Data Excel Processor:
 Reads adventure_works_sales.xlsx and counts occurrences of the phrase "United States" in column C.
 Processed Output: data_processed/adventure_works_usa_count.txt
-Execution Command: py data/sowers_process_excel.py
+Execution Command: py processed/sowers_process_excel.py
 
 People JSON Processor:
 Reads people.json and counts the number of male and female individuals.
 Processed Output: data_processed/people_by_gender.txt
-Execution Command: py data/sowers_process_json.py
+Execution Command: py processed/sowers_process_json.py
 
 Geographical Characters ISO 8859-1 Text Processor:
 Reads geographical_characters.txt and counts occurrences of the phrase "CAPITAL LETTER".
 Processed Output: data_processed/capital_letters_word_count.txt
-Execution Command: py data/sowers_process_text.py
+Execution Command: py processed/sowers_process_text.py
