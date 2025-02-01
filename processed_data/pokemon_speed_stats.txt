@@ -1,0 +1,5 @@
+Pokémon Speed Statistics:
+Minimum: 5.00
+Maximum: 180.00
+Mean: 68.28
+Standard Deviation: 29.06

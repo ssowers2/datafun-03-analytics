@@ -2,21 +2,16 @@
 Process an Excel file to count occurrences of a specific word in a column.
 
 """
-
 #####################################
 # Import Modules
 #####################################
 import sys
 import os
+import pathlib
+import openpyxl
 
 # Making sure Python can find utils_logger.py in the root folder since the process_scripts are in their own folder
 sys.path.append(os.path.abspath(os.path.join(os.path.dirname(__file__), '..')))
-
-# Import from Python Standard Library
-import pathlib
-
-# Import from external packages
-import openpyxl
 
 # Import from local project modules
 from utils_logger import logger
@@ -25,8 +20,8 @@ from utils_logger import logger
 # Declare Global Variables
 #####################################
 
-fetched_folder_name: str = "example_data"
-processed_folder_name: str = "example_processed"
+fetched_folder_name = "fetched_data"
+processed_folder_name = "processed_data"
 
 #####################################
 # Define Functions
@@ -43,15 +38,15 @@ def count_word_in_column(file_path: pathlib.Path, column_letter: str, word: str)
                 count += cell.value.lower().count(word.lower())
         return count
     except Exception as e:
-        logger.error(f"Error reading Excel file: {e}")
+        logger.error(f"There was an error reading Excel file: {e}")
         return 0
 
 def process_excel_file():
-    """Read an Excel file, count occurrences of 'GitHub' in a specific column, and save the result."""
-    input_file = pathlib.Path(fetched_folder_name, "feedback.xlsx")
-    output_file = pathlib.Path(processed_folder_name, "excel_feedback_github_count.txt")
-    column_to_check = "A"  # Replace with the appropriate column letter
-    word_to_count = "GitHub"
+    """Read an Excel file, count occurrences of 'United States' in a specific column, and save the result."""
+    input_file = pathlib.Path(fetched_folder_name, "adventure_works_sales.xlsx")
+    output_file = pathlib.Path(processed_folder_name, "adventure_works_usa_count.txt")
+    column_to_check = "C"
+    word_to_count = "United States"
     word_count = count_word_in_column(input_file, column_to_check, word_to_count)
     output_file.parent.mkdir(parents=True, exist_ok=True)
     with output_file.open('w') as file:

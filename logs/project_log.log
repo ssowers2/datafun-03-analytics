@@ -148,3 +148,76 @@
 2025-01-31 18:08:40.414 | INFO     | __main__:write_txt_file:81 - Writing data to fetched_data\geographical_characters.txt...
 2025-01-31 18:08:40.415 | INFO     | __main__:write_txt_file:85 - The data was written to fetched_data\geographical_characters.txt
 2025-01-31 18:08:40.416 | INFO     | __main__:fetch_txt_file:61 - The text file was fetched and saved as geographical_characters.txt
+2025-01-31 18:22:04.745 | INFO     | utils_logger:<module>:40 - Logging to file: logs\project_log.log
+2025-01-31 18:22:04.745 | INFO     | __main__:<module>:82 - Starting CSV processing...
+2025-01-31 18:22:04.752 | INFO     | __main__:process_csv_file:75 - Processed CSV file: fetched_data\pokemon_all_generations.csv, Statistics saved to: processed_data\pokemon_speed_stats.txt
+2025-01-31 18:22:04.753 | INFO     | __main__:<module>:84 - CSV processing complete.
+2025-01-31 18:25:15.835 | INFO     | utils_logger:<module>:40 - Logging to file: logs\project_log.log
+2025-01-31 18:25:15.835 | INFO     | __main__:main:95 - Initiating CSV data fetch demonstration...
+2025-01-31 18:25:15.835 | INFO     | __main__:fetch_csv_file:54 - Fetching CSV data from https://raw.githubusercontent.com/KeithGalli/pandas/master/pokemon_data.csv is in progress...
+2025-01-31 18:25:16.127 | INFO     | __main__:write_csv_file:78 - Writing CSV data to fetched_data\pokemon_all_generations.csv...
+2025-01-31 18:25:16.129 | INFO     | __main__:write_csv_file:82 - SUCCESS: CSV data written to fetched_data\pokemon_all_generations.csv
+2025-01-31 18:25:16.129 | INFO     | __main__:fetch_csv_file:58 - SUCCESS: CSV file fetched and saved as pokemon_all_generations.csv
+2025-01-31 18:26:14.397 | INFO     | utils_logger:<module>:40 - Logging to file: logs\project_log.log
+2025-01-31 18:26:14.398 | INFO     | __main__:<module>:82 - Starting CSV processing...
+2025-01-31 18:26:14.412 | INFO     | __main__:process_csv_file:75 - Processed CSV file: fetched_data\pokemon_all_generations.csv, Statistics saved to: processed_data\pokemon_speed_stats.txt
+2025-01-31 18:26:14.412 | INFO     | __main__:<module>:84 - CSV processing complete.
+2025-01-31 19:06:22.567 | INFO     | utils_logger:<module>:40 - Logging to file: logs\project_log.log
+2025-01-31 19:06:22.568 | INFO     | __main__:<module>:61 - Starting Excel processing...
+2025-01-31 19:06:49.410 | INFO     | __main__:process_excel_file:54 - Processed Excel file: fetched_data\adventure_works_sales.xlsx, Word count saved to: processed_data\adventure_works_usa_count.txt
+2025-01-31 19:06:49.410 | INFO     | __main__:<module>:63 - Excel processing complete.
+2025-01-31 22:34:17.556 | INFO     | utils_logger:<module>:40 - Logging to file: logs\project_log.log
+2025-01-31 22:34:17.556 | INFO     | __main__:<module>:99 - Starting JSON processing...
+2025-01-31 22:34:17.558 | INFO     | __main__:process_json_file:92 - Processed JSON file: fetched_data\employees.json, Results saved to: processed_fetched\employees_by_gender.txt
+2025-01-31 22:34:17.559 | INFO     | __main__:<module>:101 - JSON processing complete.
+2025-01-31 22:35:02.735 | INFO     | utils_logger:<module>:40 - Logging to file: logs\project_log.log
+2025-01-31 22:35:02.736 | INFO     | __main__:<module>:61 - Starting Excel processing...
+2025-01-31 22:35:22.706 | INFO     | __main__:process_excel_file:54 - Processed Excel file: fetched_data\adventure_works_sales.xlsx, Word count saved to: processed_data\adventure_works_usa_count.txt
+2025-01-31 22:35:22.707 | INFO     | __main__:<module>:63 - Excel processing complete.
+2025-01-31 22:36:39.531 | INFO     | utils_logger:<module>:40 - Logging to file: logs\project_log.log
+2025-01-31 22:36:39.535 | INFO     | __main__:<module>:99 - Starting JSON processing...
+2025-01-31 22:36:39.540 | INFO     | __main__:process_json_file:92 - Processed JSON file: fetched_data\employees.json, Results saved to: processed_data\employees_by_gender.txt
+2025-01-31 22:36:39.540 | INFO     | __main__:<module>:101 - JSON processing complete.
+2025-01-31 22:42:25.371 | INFO     | utils_logger:<module>:40 - Logging to file: logs\project_log.log
+2025-01-31 22:42:25.371 | INFO     | __main__:<module>:99 - Starting JSON processing...
+2025-01-31 22:42:25.372 | ERROR    | __main__:count_people_by_gender:76 - There was an error reading or processing JSON file: [Errno 2] No such file or directory: 'fetched_data\\people.json'
+2025-01-31 22:42:25.373 | INFO     | __main__:process_json_file:92 - Processed JSON file: fetched_data\people.json, Results saved to: processed_data\people_by_gender.txt
+2025-01-31 22:42:25.373 | INFO     | __main__:<module>:101 - JSON processing complete.
+2025-01-31 22:43:39.466 | INFO     | utils_logger:<module>:40 - Logging to file: logs\project_log.log
+2025-01-31 22:43:39.467 | INFO     | __main__:<module>:99 - Starting JSON processing...
+2025-01-31 22:43:39.468 | ERROR    | __main__:count_employees_by_gender:76 - There was an error reading or processing JSON file: cannot access local variable 'employees_dictionary' where it is not associated with a value
+2025-01-31 22:43:39.469 | INFO     | __main__:process_json_file:92 - Processed JSON file: fetched_data\employees.json, Results saved to: processed_data\employees_by_gender.txt
+2025-01-31 22:43:39.470 | INFO     | __main__:<module>:101 - JSON processing complete.
+2025-01-31 22:44:15.852 | INFO     | utils_logger:<module>:40 - Logging to file: logs\project_log.log
+2025-01-31 22:44:15.853 | INFO     | __main__:<module>:99 - Starting JSON processing...
+2025-01-31 22:44:15.853 | ERROR    | __main__:count_employees_by_gender:76 - There was an error reading or processing JSON file: cannot access local variable 'employees_dictionary' where it is not associated with a value
+2025-01-31 22:44:15.854 | INFO     | __main__:process_json_file:92 - Processed JSON file: fetched_data\employees.json, Results saved to: processed_data\employees_by_gender.txt
+2025-01-31 22:44:15.854 | INFO     | __main__:<module>:101 - JSON processing complete.
+2025-01-31 22:47:23.919 | INFO     | utils_logger:<module>:40 - Logging to file: logs\project_log.log
+2025-01-31 22:47:23.919 | INFO     | __main__:<module>:99 - Starting JSON processing...
+2025-01-31 22:47:23.920 | ERROR    | __main__:count_people_by_gender:76 - There was an error reading or processing JSON file: [Errno 2] No such file or directory: 'fetched_data\\people.json'
+2025-01-31 22:47:23.921 | INFO     | __main__:process_json_file:92 - Processed JSON file: fetched_data\people.json, Results saved to: processed_data\people_by_gender.txt
+2025-01-31 22:47:23.921 | INFO     | __main__:<module>:101 - JSON processing complete.
+2025-01-31 22:50:02.789 | INFO     | utils_logger:<module>:40 - Logging to file: logs\project_log.log
+2025-01-31 22:50:02.789 | INFO     | __main__:main:97 - Starting JSON fetch demonstration...
+2025-01-31 22:50:02.789 | INFO     | __main__:fetch_json_file:56 - Fetching JSON data from https://filesamples.com/samples/code/json/sample4.json in progress...
+2025-01-31 22:50:03.840 | INFO     | __main__:write_json_file:80 - Writing JSON data to fetched_data\people.json...
+2025-01-31 22:50:03.844 | INFO     | __main__:write_json_file:84 - JSON data was written to fetched_data\people.json
+2025-01-31 22:50:03.844 | INFO     | __main__:fetch_json_file:60 - A JSON file was fetched and saved as people.json
+2025-01-31 22:51:07.045 | INFO     | utils_logger:<module>:40 - Logging to file: logs\project_log.log
+2025-01-31 22:51:07.046 | INFO     | __main__:<module>:99 - Starting JSON processing...
+2025-01-31 22:51:07.047 | INFO     | __main__:process_json_file:92 - Processed JSON file: fetched_data\people.json, Results saved to: processed_data\people_by_gender.txt
+2025-01-31 22:51:07.047 | INFO     | __main__:<module>:101 - JSON processing complete.
+2025-01-31 22:56:20.731 | INFO     | utils_logger:<module>:40 - Logging to file: logs\project_log.log
+2025-01-31 22:56:20.731 | INFO     | __main__:<module>:55 - Starting text processing...
+2025-01-31 22:56:20.732 | ERROR    | __main__:count_word_occurrences:36 - There was an error reading the text file: [Errno 2] No such file or directory: 'fetched_data\\Capital Letters.txt'
+2025-01-31 22:56:20.733 | INFO     | __main__:process_text_file:48 - Processed text file: fetched_data\Capital Letters.txt, Word count saved to: processed_data\capital__letters_word_count.txt
+2025-01-31 22:56:20.733 | INFO     | __main__:<module>:57 - Text processing complete.
+2025-01-31 22:57:05.898 | INFO     | utils_logger:<module>:40 - Logging to file: logs\project_log.log
+2025-01-31 22:57:05.898 | INFO     | __main__:<module>:55 - Starting text processing...
+2025-01-31 22:57:05.914 | INFO     | __main__:process_text_file:48 - Processed text file: fetched_data\geographical_characters.txt, Word count saved to: processed_data\capital__letters_word_count.txt
+2025-01-31 22:57:05.914 | INFO     | __main__:<module>:57 - Text processing complete.
+2025-01-31 22:58:11.717 | INFO     | utils_logger:<module>:40 - Logging to file: logs\project_log.log
+2025-01-31 22:58:11.717 | INFO     | __main__:<module>:55 - Starting text processing...
+2025-01-31 22:58:11.718 | INFO     | __main__:process_text_file:48 - Processed text file: fetched_data\geographical_characters.txt, Word count saved to: processed_data\capital_letters_word_count.txt
+2025-01-31 22:58:11.718 | INFO     | __main__:<module>:57 - Text processing complete.

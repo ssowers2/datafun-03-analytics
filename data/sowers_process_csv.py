@@ -1,5 +1,6 @@
 """
-Process a CSV file on 2020 Happiness ratings by country to analyze the `Ladder score` column and save statistics.
+Process a CSV file on pokemon_all_generations to analyze the Pokemon `Speed` column and save statistics.
+
 """
 
 #####################################
@@ -28,44 +29,44 @@ processed_folder_name: str = "processed_data"
 # Define Functions
 #####################################
 
-def analyze_ladder_score(file_path: pathlib.Path) -> dict:
-    """Analyze the Ladder score column to calculate min, max, mean, and stdev."""
+def analyze_Speed_speed(file_path: pathlib.Path) -> dict:
+    """Analyze the 'speed' speed column to calculate min, max, mean, and stdev."""
     try:
-        # initialize an empty list to store the scores
-        score_list = []
+        # initialize an empty list to store the speeds
+        speed_list = []
         with file_path.open('r') as file:
             # csv.DictReader() methods to read into a DictReader so we can access named columns in the csv file
             dict_reader = csv.DictReader(file)  
             for row in dict_reader:
                 try:
-                    score = float(row["Ladder score"])  # Extract and convert to float
-                    # append the score to the list
-                    score_list.append(score)
+                    speed = float(row["Speed"])  # Extract and convert to float
+                    # append the speed to the list
+                    speed_list.append(speed)
                 except ValueError as e:
                     logger.warning(f"Skipping invalid row: {row} ({e})")
         
         # Calculate statistics
         stats = {
-            "min": min(score_list),
-            "max": max(score_list),
-            "mean": statistics.mean(score_list),
-            "stdev": statistics.stdev(score_list) if len(score_list) > 1 else 0,
+            "min": min(speed_list),
+            "max": max(speed_list),
+            "mean": statistics.mean(speed_list),
+            "stdev": statistics.stdev(speed_list) if len(speed_list) > 1 else 0,
         }
         return stats
     except Exception as e:
-        logger.error(f"Error processing CSV file: {e}")
+        logger.error(f"There was an error processing CSV file: {e}")
         return {}
 
 def process_csv_file():
-    """Read a CSV file, analyze Ladder score, and save the results."""
-    input_file = pathlib.Path(fetched_folder_name, "2020_happiness.csv")
-    output_file = pathlib.Path(processed_folder_name, "happiness_ladder_score_stats.txt")
+    """Read a CSV file, analyze Speed, and save the results."""
+    input_file = pathlib.Path(fetched_folder_name, "pokemon_all_generations.csv")
+    output_file = pathlib.Path(processed_folder_name, "pokemon_speed_stats.txt")
     
-    stats = analyze_ladder_score(input_file)
+    stats = analyze_Speed_speed(input_file)
     output_file.parent.mkdir(parents=True, exist_ok=True)
     
     with output_file.open('w') as file:
-        file.write("Ladder Score Statistics:\n")
+        file.write("Pokémon Speed Statistics:\n")
         file.write(f"Minimum: {stats['min']:.2f}\n")
         file.write(f"Maximum: {stats['max']:.2f}\n")
         file.write(f"Mean: {stats['mean']:.2f}\n")

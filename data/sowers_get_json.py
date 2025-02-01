@@ -1,5 +1,5 @@
 """
-This script fetches JSON data from a web URL and saves it as employees.json in a folder called fetched_data by: 
+This script fetches JSON data from a web URL and saves it as people.json in a folder called fetched_data by: 
 
 Importing needed modules (requests, json, pathlib, etc.).
 Defining a function fetch_json_file() to download the JSON file and save it locally.
@@ -95,7 +95,7 @@ def main():
     """
     json_url = "https://filesamples.com/samples/code/json/sample4.json"
     logger.info("Starting JSON fetch demonstration...")
-    fetch_json_file(fetched_folder_name, "employees.json", json_url)
+    fetch_json_file(fetched_folder_name, "people.json", json_url)
 
 #####################################
 # Conditional Execution

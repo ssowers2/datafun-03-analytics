@@ -1,5 +1,6 @@
 """
-Process a text file to count occurrences of the word "Romeo" and save the result.
+Process a text file to count occurrences of the word "CAPITAL LETTER" and save the result.
+
 """
 
 #####################################
@@ -7,12 +8,10 @@ Process a text file to count occurrences of the word "Romeo" and save the result
 #####################################
 import sys
 import os
+import pathlib
 
 # Making sure Python can find utils_logger.py in the root folder since the process_scripts are in their own folder
 sys.path.append(os.path.abspath(os.path.join(os.path.dirname(__file__), '..')))
-
-# Import from Python Standard Library
-import pathlib
 
 # Import from local project modules
 from utils_logger import logger
@@ -21,8 +20,8 @@ from utils_logger import logger
 # Declare Global Variables
 #####################################
 
-fetched_folder_name: str = "example_data"
-processed_folder_name: str = "example_processed"
+fetched_folder_name: str = "fetched_data"
+processed_folder_name: str = "processed_data"
 
 #####################################
 # Define Functions
@@ -35,14 +34,14 @@ def count_word_occurrences(file_path: pathlib.Path, word: str) -> int:
             content: str = file.read()
             return content.lower().count(word.lower())
     except Exception as e:
-        logger.error(f"Error reading text file: {e}")
+        logger.error(f"There was an error reading the text file: {e}")
         return 0
 
 def process_text_file():
-    """Read a text file, count occurrences of 'Romeo', and save the result."""
-    input_file = pathlib.Path(fetched_folder_name, "romeo.txt")
-    output_file = pathlib.Path(processed_folder_name, "text_romeo_word_count.txt")
-    word_to_count: str = "Romeo"
+    """Read a text file, count occurrences of 'CAPITAL LETTER', and save the result."""
+    input_file = pathlib.Path(fetched_folder_name, "geographical_characters.txt")
+    output_file = pathlib.Path(processed_folder_name, "capital_letters_word_count.txt")
+    word_to_count: str = "CAPITAL LETTER"
     word_count: int = count_word_occurrences(input_file, word_to_count)
     output_file.parent.mkdir(parents=True, exist_ok=True)
     with output_file.open('w') as file:
