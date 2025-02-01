@@ -1,6 +1,10 @@
 """
-This file fetches an Excel file from a website that contains sales data.
-and saves it to a local file named adventure_works_sales.xlsx in a folder named data.
+This script fetches an Excel file containing sales data from a website and saves it as adventure_works_sales.xlsx inside the fetched_data folder by:
+
+Downloading an Excel sales dataset from the web.
+Saving the file locally as adventure_works_sales.xlsx.
+Logging each step of the process (fetching, writing, success, errors).
+Handling potential errors like missing URLs or failed requests.
 
 """
 
@@ -44,11 +48,11 @@ def fetch_excel_file(folder_name: str, filename: str, url: str) -> None:
         fetch_excel_file("data", "data.xlsx", "https://example.com/data.xlsx")
     """
     if not url:
-        logger.error("The URL provided is empty. Please provide a valid URL.")
+        logger.error("The URL provided is empty or was not found. Please provide a valid URL.")
         return
 
     try:
-        logger.info(f"Fetching Excel data from {url}...")
+        logger.info(f"Fetching Excel data from {url} is in progress...")
         response = requests.get(url)
         response.raise_for_status()
         write_excel_file(folder_name, filename, response.content)
@@ -75,9 +79,9 @@ def write_excel_file(folder_name: str, filename: str, binary_data: bytes) -> Non
         file_path.parent.mkdir(parents=True, exist_ok=True)
         with file_path.open('wb') as file:
             file.write(binary_data)
-        logger.info(f"SUCCESS: Excel data written to {file_path}")
+        logger.info(f"The Excel data was written to {file_path}")
     except IOError as io_err:
-        logger.error(f"Error writing Excel data to {file_path}: {io_err}")
+        logger.error(f"There was an error writing Excel data to {file_path}: {io_err}")
 
 #####################################
 # Define main() function

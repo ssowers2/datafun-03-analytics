@@ -1,6 +1,11 @@
 """
-This file fetches a CSV file from the website about Pokémon (All Generations)
-and saves it to a local file named 2025_pokemon.csv in a folder named data.
+
+This script downloads a CSV file containing Pokémon species, games, and regions from a URL and saves it as pokemon_all_generations.csv inside the fetched_data folder by:
+
+Fetching a text file containing the ISO 8859-1 character set from the web.  
+Saving the text file locally as geographical_characters.txt in the fetched_data folder.  
+Logging each step of the process (fetching, writing, success, errors).  
+Handling potential errors like missing URLs or failed requests. 
 
 """
 #####################################
@@ -14,7 +19,7 @@ import pathlib
 # Making sure Python can find the utils_logger.py file in the root folder since the scripts are in their own folder.
 sys.path.append(os.path.abspath(os.path.join(os.path.dirname(__file__), '..')))
 
-from utils_logger import logger #This must go after line 15 to work.
+from utils_logger import logger
 
 #####################################
 # Declare Global Variables
@@ -46,7 +51,7 @@ def fetch_csv_file(folder_name: str, filename: str, url: str) -> None:
         return
 
     try:
-        logger.info(f"Fetching CSV data from {url}...")
+        logger.info(f"Fetching CSV data from {url} is in progress...")
         response = requests.get(url)
         response.raise_for_status()
         write_csv_file(folder_name, filename, response.text)
@@ -86,9 +91,9 @@ def main():
     """
     Main function to demonstrate fetching the CSV data.
     """
-    csv_url = 'https://raw.githubusercontent.com/KeithGalli/pandas/master/pokemon_data.csv'
+    csv_url = "https://raw.githubusercontent.com/KeithGalli/pandas/master/pokemon_data.csv"
     logger.info("Initiating CSV data fetch demonstration...")
-    fetch_csv_file(fetched_folder_name, "2025_pokemon.csv", csv_url)
+    fetch_csv_file(fetched_folder_name, "pokemon_all_generations.csv", csv_url)
 
 #####################################
 # Conditional Execution
