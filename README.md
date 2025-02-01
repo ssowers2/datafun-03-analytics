@@ -44,3 +44,45 @@ datafun-03-analytics/
 ##Helpful Links
 https://github.com/denisecase/pro-analytics-01/tree/main/02-project-initialization
 https://github.com/denisecase/pro-analytics-01/blob/main/03-repeatable-workflow/REPEATABLE-WORKFLOW.md
+
+FETCHERS
+Pokémon CSV Fetcher:
+Downloads a CSV file containing Pokémon species, games, and regions from a URL.
+Saved As: fetched_data/pokemon_all_generations.csv
+Execution Command: py data/sowers_get_csv.pyy
+
+Sales Data Excel Fetcher:
+Fetches an Excel file containing sales data from a website.
+Saved As: fetched_data/adventure_works_sales.xlsx
+Execution Command: py data/sowers_get_excel.py
+
+People JSON Fetcher:
+Fetches a JSON file containing demographic information of individuals.
+Saved As: fetched_data/people.json
+Execution Command: py data/sowers_get_json.py
+
+Geographical Charactors Text Fetcher:
+Fetches a text file listing ISO 8859-1 characters and their descriptions.
+Saved As: fetched_data/geographical_characters.txt
+Execution Command: py data/sowers_get_text.py
+
+PROCESSORS
+Pokémon CSV Processor:
+Analyzes the Speed column in pokemon_all_generations.csv, computing statistics like min, max, mean, and standard deviation.
+Processed Output: data_processed/pokemon_speed_stats.txt
+Execution Command: py data/sowers_process_csv.py
+
+Sales Data Excel Processor:
+Reads adventure_works_sales.xlsx and counts occurrences of the phrase "United States" in column C.
+Processed Output: data_processed/adventure_works_usa_count.txt
+Execution Command: py data/sowers_process_excel.py
+
+People JSON Processor:
+Reads people.json and counts the number of male and female individuals.
+Processed Output: data_processed/people_by_gender.txt
+Execution Command: py data/sowers_process_json.py
+
+Geographical Characters ISO 8859-1 Text Processor:
+Reads geographical_characters.txt and counts occurrences of the phrase "CAPITAL LETTER".
+Processed Output: data_processed/capital_letters_word_count.txt
+Execution Command: py data/sowers_process_text.py

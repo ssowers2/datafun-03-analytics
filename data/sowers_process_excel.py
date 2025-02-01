@@ -21,7 +21,7 @@ from utils_logger import logger
 #####################################
 
 fetched_folder_name = "fetched_data"
-processed_folder_name = "processed_data"
+processed_folder_name = "data_processed"
 
 #####################################
 # Define Functions
