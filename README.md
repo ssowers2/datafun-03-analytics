@@ -46,20 +46,21 @@ https://github.com/denisecase/pro-analytics-01/tree/main/02-project-initializati
 https://github.com/denisecase/pro-analytics-01/blob/main/03-repeatable-workflow/REPEATABLE-WORKFLOW.md
 
 ##FETCHERS
-##Pokémon CSV Fetcher:
+
+###Pokémon CSV Fetcher:
 1. Downloads a CSV file containing Pokémon species, games, and regions from a URL.
 2. Saved As: fetched_data/pokemon_all_generations.csv
 3. Execution Command: py data/sowers_get_csv.pyy
 
 ##Sales Data Excel Fetcher:
-##Fetches an Excel file containing sales data from a website.
-1. Saved As: fetched_data/adventure_works_sales.xlsx
-2. Execution Command: py data/sowers_get_excel.py
+1. Fetches an Excel file containing sales data from a website.
+2. Saved As: fetched_data/adventure_works_sales.xlsx
+3. Execution Command: py data/sowers_get_excel.py
 
 ##People JSON Fetcher:
-##Fetches a JSON file containing demographic information of individuals.
-1. Saved As: fetched_data/people.json
-2. Execution Command: py data/sowers_get_json.py
+1. Fetches a JSON file containing demographic information of individuals.
+2. Saved As: fetched_data/people.json
+3. Execution Command: py data/sowers_get_json.py
 
 ##Geographical Charactors Text Fetcher:
 1. Fetches a text file listing ISO 8859-1 characters and their descriptions.
@@ -67,7 +68,8 @@ https://github.com/denisecase/pro-analytics-01/blob/main/03-repeatable-workflow/
 3. Execution Command: py data/sowers_get_text.py
 
 ##PROCESSORS
-##Pokémon CSV Processor:
+
+###Pokémon CSV Processor:
 1. Analyzes the Speed column in pokemon_all_generations.csv, computing statistics like min, max, mean, and standard deviation.
 2. Processed Output: data_processed/pokemon_speed_stats.txt
 3. Execution Command: py processed/sowers_process_csv.py
